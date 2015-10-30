@@ -1,0 +1,23 @@
+{
+  "name": "defer-request",
+  "version": "0.0.1",
+  "description": "wrap request calls in a Q.defer()",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/xaiki/defer-request"
+  },
+  "keywords": [
+    "defer",
+    "request"
+  ],
+  "author": "Niv Sardi <x@btn.sh>",
+  "license": "GPL",
+  "bugs": {
+    "url": "https://github.com/xaiki/defer-request/issues"
+  },
+  "homepage": "https://github.com/xaiki/defer-request"
+}
