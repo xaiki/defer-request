@@ -1,6 +1,6 @@
 {
   "name": "defer-request",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "wrap request calls in a Q.defer()",
   "main": "index.js",
   "scripts": {
