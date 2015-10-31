@@ -10,11 +10,18 @@ module.exports = function (url, params, hasQuestionMark) {
         url += querystring.stringify(params);
     }
 
-    console.log('deferRequest', url, params, querystring.stringify(params));
-    request({
-        url: url,
-        json: true
-    }, function (error, response, data) {
+    var getParams;
+    if (typeof url === 'string') {
+        getParams = {
+            url: url,
+            json: true
+        }
+    } else {
+        getParams = url;
+    }
+
+    console.log('deferRequest', getParams, params, querystring.stringify(params));
+    request(getParams, function (error, response, data) {
         if (error) {
             d.reject(error);
         } else if (!data || (data.error && data.error !== 'No movies found')) {
